@@ -1,0 +1,146 @@
+.text-effect-shortcodes-settings p {
+    margin-left: 1em;
+}
+
+.text-effect-shortcodes-fx-marquee {
+    display: inline-block;
+    width: 100%;
+    min-width: 360px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.text-effect-shortcodes-marquee span.inner-marquee {
+    display: inline-block;
+    padding-left: 85%;
+    animation: text-effect-shortcodes-marquee 15s linear infinite;
+    white-space: nowrap;
+}
+
+.text-effect-shortcodes-marquee span.inner-marquee:hover {
+    animation-play-state: paused
+}
+
+@keyframes text-effect-shortcodes-marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-85%, 0);
+    }
+}
+
+.text-effect-shortcodes-blink {
+    animation: text-effect-shortcodes-blink 1s linear infinite;
+}
+
+@keyframes text-effect-shortcodes-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+span.text-effect-shortcodes-code {
+    display: inline;
+    unicode-bidi: embed;
+    font-family: monospace;
+    white-space: pre;
+}
+
+.text-effect-shortcodes-instructions {
+    background: #fff;
+    margin-left: 1em;
+    width: 77%;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+}
+
+.text-effect-shortcodes-instructions table td,
+.text-effect-shortcodes-instructions table th {
+    padding: 1em;
+    text-align: left;
+}
+
+.text-effect-shortcodes-instructions .wide {
+    width: 256px;
+}
+
+.text-effect-shortcodes-rainbow {
+    -webkit-animation: text-effect-shortcodes-rainbow 3s infinite;
+    -ms-animation: text-effect-shortcodes-rainbow 3s infinite;
+    animation: text-effect-shortcodes-rainbow 3s infinite;
+}
+
+@-webkit-keyframes text-effect-shortcodes-rainbow {
+    0% {
+        color: orange;
+    }
+    10% {
+        color: purple;
+    }
+    20% {
+        color: red;
+    }
+    40% {
+        color: yellow;
+    }
+    60% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+@-ms-keyframes text-effect-shortcodes-rainbow {
+    0% {
+        color: orange;
+    }
+    10% {
+        color: purple;
+    }
+    20% {
+        color: red;
+    }
+    40% {
+        color: yellow;
+    }
+    60% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
+    100% {
+        color: orange;
+    }
+}
+
+@keyframes text-effect-shortcodes-rainbow {
+    0% {
+        color: orange;
+    }
+    10% {
+        color: purple;
+    }
+    20% {
+        color: red;
+    }
+    40% {
+        color: yellow;
+    }
+    60% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
+    100% {
+        color: orange;
+    }
+}
