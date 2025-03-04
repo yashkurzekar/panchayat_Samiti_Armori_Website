@@ -2558,7 +2558,8 @@ iframe.wp-embedded-content {
     }
     .header-ads-desktop #header-widgets {
         float: right;
-        display: block
+        display: block;
+        padding-top: 50px;
     }
     #nav-header .nav li a {
         color: #fff;
@@ -2675,7 +2676,7 @@ iframe.wp-embedded-content {
     }
     .header-mobile-sticky #header-image-wrap {
         position: relative;
-        padding-top: 50px
+        padding-top: 50px;
     }
     .header-mobile-sticky .mobile-sticky {
         position: fixed;
