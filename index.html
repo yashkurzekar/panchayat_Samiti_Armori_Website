@@ -2373,6 +2373,36 @@
                                                     प्रसिद्ध आहेत. देऊळगाव येथे लोहखनिजाचा साठा आहे.</p>
                                                 <div style="margin-top:30px; clear:both;"></div>
                                             </div>
+                                            <script>//this will fix navigation issues
+                                                document.addEventListener("DOMContentLoaded", function () {
+                                                    const tabs = document.querySelectorAll(".rtbs_menu a");
+                                                    const tabContents = document.querySelectorAll(".rtbs_content");
+
+                                                    tabs.forEach(tab => {
+                                                        tab.addEventListener("click", function (event) {
+                                                            event.preventDefault(); // Prevent page refresh
+
+                                                            // Remove active class from all tabs and contents
+                                                            tabs.forEach(t => {
+                                                                t.classList.remove("active");
+                                                                t.style.background = "transparent"; // Reset background for inactive tabs
+                                                            });
+
+                                                            tabContents.forEach(content => content.classList.remove("active"));
+
+                                                            // Add active class to clicked tab and corresponding content
+                                                            this.classList.add("active");
+                                                            this.style.background = "#0e7000"; // Apply green background to active tab
+
+                                                            const target = document.querySelector(this.getAttribute("data-tab"));
+                                                            if (target) {
+                                                                target.classList.add("active");
+                                                            }
+                                                        });
+                                                    });
+                                                });
+
+                                            </script>
                                         </div>
                                         <p style="text-align: center;"><a href="https://grievance.zpgadchiroli.in/"
                                                 target="_blank" rel="noopener noreferrer"><img loading="lazy"
@@ -2522,7 +2552,7 @@
                                     <div class="widget-content">
                                         <div
                                             class="pwn-profile-widget-ninja-wrapper pwn-profile-widget-ninja-layout-center pwn-layout-style-style2 pwn-profile-widget-ninja-avatar-round">
-                                            <div class="pwn-container-bottom-wrapper" style=""><img
+                                            <div class="pwn-container-bottom-wrapper"><img
                                                     src="wp-content/uploads/2025/01/ABDO_2025.jpeg"
                                                     alt="श्री.अशोक दयारामजी कुर्झेकार" width="180" height="180"
                                                     class="profile-avatar" style="margin-top: -0px;" />
