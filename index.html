@@ -136,8 +136,8 @@
             }))
         }((window, document), window._wpemojiSettings);
     </script>
-    <link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min.css?ver=6.7.2' media='all' />
-    <link rel='stylesheet' id='menu-icons-extra-css' href='wp-content/plugins/menu-icons/css/extra.min.css?ver=0.13.16'
+    <link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min.css' media='all' />
+    <link rel='stylesheet' id='menu-icons-extra-css' href='wp-content/plugins/menu-icons/css/extra.min.css'
         media='all' />
     <style id='wp-emoji-styles-inline-css'>
         img.wp-smiley,
@@ -153,7 +153,7 @@
             padding: 0 !important;
         }
     </style>
-    <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css?ver=6.7.2'
+    <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css'
         media='all' />
     <style id='pdfemb-pdf-embedder-viewer-style-inline-css'>
         .wp-block-pdfemb-pdf-embedder-viewer {
@@ -1316,142 +1316,142 @@
         href="indexad2c.html?rest_route=%2Foembed%2F1.0%2Fembed&amp;url=https%3A%2F%2Fwww.zpgadchiroli.in%2F" />
     <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
         href="index277d.html?rest_route=%2Foembed%2F1.0%2Fembed&amp;url=https%3A%2F%2Fwww.zpgadchiroli.in%2F&amp;format=xml" />
-    <!-- <script id="wpcp_disable_selection" type="text/javascript">
+    <script id="wpcp_disable_selection" type="text/javascript">
         var image_save_msg = 'You are not allowed to save images!';
         var no_menu_msg = 'Context Menu disabled!';
         var smessage = "Content is protected !!";
 
-        function disableEnterKey(e) {
-            var elemtype = e.target.tagName;
+        // function disableEnterKey(e) {
+        //     var elemtype = e.target.tagName;
 
-            elemtype = elemtype.toUpperCase();
+        //     elemtype = elemtype.toUpperCase();
 
-            if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED") {
-                elemtype = 'TEXT';
-            }
+        //     if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED") {
+        //         elemtype = 'TEXT';
+        //     }
 
-            if (e.ctrlKey) {
-                var key;
-                if (window.event)
-                    key = window.event.keyCode; //IE
-                else
-                    key = e.which; //firefox (97)
-                //if (key != 17) alert(key);
-                if (elemtype != 'TEXT' && (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85 || key == 86 || key == 83 || key == 43 || key == 73)) {
-                    if (wccp_free_iscontenteditable(e)) return true;
-                    show_wpcp_message('You are not allowed to copy content or view source');
-                    return false;
-                } else
-                    return true;
-            }
-        }
+        //     if (e.ctrlKey) {
+        //         var key;
+        //         if (window.event)
+        //             key = window.event.keyCode; //IE
+        //         else
+        //             key = e.which; //firefox (97)
+        //         //if (key != 17) alert(key);
+        //         if (elemtype != 'TEXT' && (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85 || key == 86 || key == 83 || key == 43 || key == 73)) {
+        //             if (wccp_free_iscontenteditable(e)) return true;
+        //             show_wpcp_message('You are not allowed to copy content or view source');
+        //             return false;
+        //         } else
+        //             return true;
+        //     }
+        // }
 
 
-        /*For contenteditable tags*/
-        function wccp_free_iscontenteditable(e) {
-            var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+        // /*For contenteditable tags*/
+        // function wccp_free_iscontenteditable(e) {
+        //     var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
 
-            var target = e.target || e.srcElement;
+        //     var target = e.target || e.srcElement;
 
-            var elemtype = e.target.nodeName;
+        //     var elemtype = e.target.nodeName;
 
-            elemtype = elemtype.toUpperCase();
+        //     elemtype = elemtype.toUpperCase();
 
-            var iscontenteditable = "false";
+        //     var iscontenteditable = "false";
 
-            if (typeof target.getAttribute != "undefined") iscontenteditable = target.getAttribute("contenteditable"); // Return true or false as string
+        //     if (typeof target.getAttribute != "undefined") iscontenteditable = target.getAttribute("contenteditable"); // Return true or false as string
 
-            var iscontenteditable2 = false;
+        //     var iscontenteditable2 = false;
 
-            if (typeof target.isContentEditable != "undefined") iscontenteditable2 = target.isContentEditable; // Return true or false as boolean
+        //     if (typeof target.isContentEditable != "undefined") iscontenteditable2 = target.isContentEditable; // Return true or false as boolean
 
-            if (target.parentElement.isContentEditable) iscontenteditable2 = true;
+        //     if (target.parentElement.isContentEditable) iscontenteditable2 = true;
 
-            if (iscontenteditable == "true" || iscontenteditable2 == true) {
-                if (typeof target.style != "undefined") target.style.cursor = "text";
+        //     if (iscontenteditable == "true" || iscontenteditable2 == true) {
+        //         if (typeof target.style != "undefined") target.style.cursor = "text";
 
-                return true;
-            }
-        }
+        //         return true;
+        //     }
+        // }
 
-        ////////////////////////////////////
-        function disable_copy(e) {
-            var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+        // ////////////////////////////////////
+        // function disable_copy(e) {
+        //     var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
 
-            var elemtype = e.target.tagName;
+        //     var elemtype = e.target.tagName;
 
-            elemtype = elemtype.toUpperCase();
+        //     elemtype = elemtype.toUpperCase();
 
-            if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED") {
-                elemtype = 'TEXT';
-            }
+        //     if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED") {
+        //         elemtype = 'TEXT';
+        //     }
 
-            if (wccp_free_iscontenteditable(e)) return true;
+        //     if (wccp_free_iscontenteditable(e)) return true;
 
-            var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+        //     var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
 
-            var checker_IMG = '';
-            if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {
-                show_wpcp_message(alertMsg_IMG);
-                return false;
-            }
-            if (elemtype != "TEXT") {
-                if (smessage !== "" && e.detail == 2)
-                    show_wpcp_message(smessage);
+        //     var checker_IMG = '';
+        //     if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {
+        //         show_wpcp_message(alertMsg_IMG);
+        //         return false;
+        //     }
+        //     if (elemtype != "TEXT") {
+        //         if (smessage !== "" && e.detail == 2)
+        //             show_wpcp_message(smessage);
 
-                if (isSafari)
-                    return true;
-                else
-                    return false;
-            }
-        }
+        //         if (isSafari)
+        //             return true;
+        //         else
+        //             return false;
+        //     }
+        // }
 
-        //////////////////////////////////////////
-        function disable_copy_ie() {
-            var e = e || window.event;
-            var elemtype = window.event.srcElement.nodeName;
-            elemtype = elemtype.toUpperCase();
-            if (wccp_free_iscontenteditable(e)) return true;
-            if (elemtype == "IMG") {
-                show_wpcp_message(alertMsg_IMG);
-                return false;
-            }
-            if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED") {
-                return false;
-            }
-        }
+        // //////////////////////////////////////////
+        // function disable_copy_ie() {
+        //     var e = e || window.event;
+        //     var elemtype = window.event.srcElement.nodeName;
+        //     elemtype = elemtype.toUpperCase();
+        //     if (wccp_free_iscontenteditable(e)) return true;
+        //     if (elemtype == "IMG") {
+        //         show_wpcp_message(alertMsg_IMG);
+        //         return false;
+        //     }
+        //     if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED") {
+        //         return false;
+        //     }
+        // }
 
-        function reEnable() {
-            return true;
-        }
-        document.onkeydown = disableEnterKey;
-        document.onselectstart = disable_copy_ie;
-        if (navigator.userAgent.indexOf('MSIE') == -1) {
-            document.onmousedown = disable_copy;
-            document.onclick = reEnable;
-        }
+        // function reEnable() {
+        //     return true;
+        // }
+        // document.onkeydown = disableEnterKey;
+        // document.onselectstart = disable_copy_ie;
+        // if (navigator.userAgent.indexOf('MSIE') == -1) {
+        //     document.onmousedown = disable_copy;
+        //     document.onclick = reEnable;
+        // }
 
-        function disableSelection(target) {
-            //For IE This code will work
-            if (typeof target.onselectstart != "undefined")
-                target.onselectstart = disable_copy_ie;
+        // function disableSelection(target) {
+        //     //For IE This code will work
+        //     if (typeof target.onselectstart != "undefined")
+        //         target.onselectstart = disable_copy_ie;
 
-            //For Firefox This code will work
-            else if (typeof target.style.MozUserSelect != "undefined") {
-                target.style.MozUserSelect = "none";
-            }
+        //     //For Firefox This code will work
+        //     else if (typeof target.style.MozUserSelect != "undefined") {
+        //         target.style.MozUserSelect = "none";
+        //     }
 
-            //All other  (ie: Opera) This code will work
-            else
-                target.onmousedown = function () {
-                    return false
-                }
-            target.style.cursor = "default";
-        }
+        //     //All other  (ie: Opera) This code will work
+        //     else
+        //         target.onmousedown = function () {
+        //             return false
+        //         }
+        //     target.style.cursor = "default";
+        // }
         //Calling the JS function directly just after body load
-        window.onload = function () {
-            disableSelection(document.body);
-        };
+        // window.onload = function () {
+        //     disableSelection(document.body);
+        // };
 
         //////////////////special for safari Start////////////////
         var onlongtouch;
@@ -1561,11 +1561,11 @@
         }
     </script>
     <link rel="preload" as="font" type="font/woff2"
-        href="wp-content/themes/hueman/assets/front/webfonts/fa-brands-400.woff2?v=5.15.2" crossorigin="anonymous" />
+        href="wp-content/themes/hueman/assets/front/webfonts/fa-brands-400.woff2" crossorigin="anonymous" />
     <link rel="preload" as="font" type="font/woff2"
-        href="wp-content/themes/hueman/assets/front/webfonts/fa-regular-400.woff2?v=5.15.2" crossorigin="anonymous" />
+        href="wp-content/themes/hueman/assets/front/webfonts/fa-regular-400.woff2" crossorigin="anonymous" />
     <link rel="preload" as="font" type="font/woff2"
-        href="wp-content/themes/hueman/assets/front/webfonts/fa-solid-900.woff2?v=5.15.2" crossorigin="anonymous" />
+        href="wp-content/themes/hueman/assets/front/webfonts/fa-solid-900.woff2" crossorigin="anonymous" />
     <!--[if lt IE 9]>
 <script src="https://www.zpgadchiroli.in/wp-content/themes/hueman/assets/front/js/ie/html5shiv-printshiv.min.js"></script>
 <script src="https://www.zpgadchiroli.in/wp-content/themes/hueman/assets/front/js/ie/selectivizr.js"></script>
@@ -1605,7 +1605,7 @@
                 // console.log(message);
                 var xhr = new XMLHttpRequest();
                 var nonce = '5661924dd8';
-                var ajaxurl = 'wp-admin/admin-ajaxaf69.html?action=bill_minozzi_js_error_catched&amp;_wpnonce=030e714514'; // No need for esc_js here
+                var ajaxurl = 'wp-admin/admin-ajax.html?action=bill_minozzi_js_error_catched&amp;_wpnonce=030e714514'; // No need for esc_js here
                 xhr.open('POST', encodeURI(ajaxurl));
                 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                 xhr.onload = function () {
@@ -1623,7 +1623,7 @@
             }
         }
         window.addEventListener('beforeunload', sendErrorsToServer);
-    </script> -->
+    </script>
     <link rel="icon" href="wp-content/uploads/2019/07/Logo-150x150.png" sizes="32x32" />
     <link rel="icon" href="wp-content/uploads/2019/07/Logo-320x320.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="wp-content/uploads/2019/07/Logo-320x320.png" />
@@ -1681,6 +1681,27 @@
                                                                 <div class="n2-ss-slider-2 n2-ow">
                                                                     <div class="n2-ss-slider-3 n2-ow">
                                                                         <div class="n2-ss-slide-backgrounds n2-ow-all">
+                                                                            <!-- <div class="n2-ss-slide-background"
+                                                                                data-public-id="1" data-mode="fill">
+                                                                                <div class="n2-ss-slide-background-image"
+                                                                                    data-blur="0" data-opacity="100"
+                                                                                    data-x="50" data-y="50" data-alt=""
+                                                                                    data-title="">
+                                                                                    <picture class="skip-lazy"
+                                                                                        data-skip-lazy="1"><img
+                                                                                            decoding="async"
+                                                                                            src="wp-content/uploads/2019/03/haraghartiranga.jpg"
+                                                                                            alt="" title=""
+                                                                                            loading="lazy"
+                                                                                            class="skip-lazy"
+                                                                                            data-skip-lazy="1">
+                                                                                    </picture>
+                                                                                </div>
+                                                                                <div data-color="RGBA(255,255,255,0)"
+                                                                                    style="background-color: RGBA(255,255,255,0);"
+                                                                                    class="n2-ss-slide-background-color">
+                                                                                </div>
+                                                                            </div> -->
                                                                             <div class="n2-ss-slide-background"
                                                                                 data-public-id="1" data-mode="fill">
                                                                                 <div class="n2-ss-slide-background-image"
@@ -1690,7 +1711,7 @@
                                                                                     <picture class="skip-lazy"
                                                                                         data-skip-lazy="1"><img
                                                                                             decoding="async"
-                                                                                            src="/wp-content/uploads/2019/03/haraghartiranga.jpg"
+                                                                                            src="wp-content/uploads/2025/02/office.jpg"
                                                                                             alt="" title=""
                                                                                             loading="lazy"
                                                                                             class="skip-lazy"
@@ -1711,7 +1732,7 @@
                                                                                     <picture class="skip-lazy"
                                                                                         data-skip-lazy="1"><img
                                                                                             decoding="async"
-                                                                                            src="/wp-content/uploads/2025/02/office.jpg"
+                                                                                            src="wp-content/uploads/2025/02/krida1.jpg"
                                                                                             alt="" title=""
                                                                                             loading="lazy"
                                                                                             class="skip-lazy"
@@ -1727,12 +1748,13 @@
                                                                                 data-public-id="3" data-mode="fill">
                                                                                 <div class="n2-ss-slide-background-image"
                                                                                     data-blur="0" data-opacity="100"
-                                                                                    data-x="50" data-y="50" data-alt=""
-                                                                                    data-title="">
+                                                                                    data-x="52" data-y="46" data-alt=""
+                                                                                    data-title=""
+                                                                                    style="--ss-o-pos-x:52%;--ss-o-pos-y:46%">
                                                                                     <picture class="skip-lazy"
                                                                                         data-skip-lazy="1"><img
                                                                                             decoding="async"
-                                                                                            src="/wp-content/uploads/2025/02/krida1.jpg"
+                                                                                            src="wp-content/uploads/2025/02/meet.jpg"
                                                                                             alt="" title=""
                                                                                             loading="lazy"
                                                                                             class="skip-lazy"
@@ -1748,13 +1770,12 @@
                                                                                 data-public-id="4" data-mode="fill">
                                                                                 <div class="n2-ss-slide-background-image"
                                                                                     data-blur="0" data-opacity="100"
-                                                                                    data-x="52" data-y="46" data-alt=""
-                                                                                    data-title=""
-                                                                                    style="--ss-o-pos-x:52%;--ss-o-pos-y:46%">
+                                                                                    data-x="50" data-y="50" data-alt=""
+                                                                                    data-title="">
                                                                                     <picture class="skip-lazy"
                                                                                         data-skip-lazy="1"><img
                                                                                             decoding="async"
-                                                                                            src="/wp-content/uploads/2025/02/meet.jpg"
+                                                                                            src="wp-content/uploads/2025/02/visit.jpeg"
                                                                                             alt="" title=""
                                                                                             loading="lazy"
                                                                                             class="skip-lazy"
@@ -1775,28 +1796,7 @@
                                                                                     <picture class="skip-lazy"
                                                                                         data-skip-lazy="1"><img
                                                                                             decoding="async"
-                                                                                            src="/wp-content/uploads/2025/02/visit.jpeg"
-                                                                                            alt="" title=""
-                                                                                            loading="lazy"
-                                                                                            class="skip-lazy"
-                                                                                            data-skip-lazy="1">
-                                                                                    </picture>
-                                                                                </div>
-                                                                                <div data-color="RGBA(255,255,255,0)"
-                                                                                    style="background-color: RGBA(255,255,255,0);"
-                                                                                    class="n2-ss-slide-background-color">
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="n2-ss-slide-background"
-                                                                                data-public-id="6" data-mode="fill">
-                                                                                <div class="n2-ss-slide-background-image"
-                                                                                    data-blur="0" data-opacity="100"
-                                                                                    data-x="50" data-y="50" data-alt=""
-                                                                                    data-title="">
-                                                                                    <picture class="skip-lazy"
-                                                                                        data-skip-lazy="1"><img
-                                                                                            decoding="async"
-                                                                                            src="/wp-content/uploads/2025/02/visit2.jpg"
+                                                                                            src="wp-content/uploads/2025/02/visit2.jpg"
                                                                                             alt="" title=""
                                                                                             loading="lazy"
                                                                                             class="skip-lazy"
@@ -1814,7 +1814,7 @@
                                                                                 viewBox="0 0 800 400"
                                                                                 data-related-device="desktopPortrait"
                                                                                 class="n2-ow n2-ss-preserve-size n2-ss-preserve-size--slider n2-ss-slide-limiter"></svg>
-                                                                            <div data-first="1" data-slide-duration="0"
+                                                                            <!-- <div data-first="1" data-slide-duration="0"
                                                                                 data-id="14" data-slide-public-id="1"
                                                                                 data-title="पंचायत समिती ,आरमोरी"
                                                                                 class="n2-ss-slide n2-ow  n2-ss-slide-14">
@@ -1828,9 +1828,9 @@
                                                                                         data-sstype="slide"
                                                                                         data-pm="default"></div>
                                                                                 </div>
-                                                                            </div>
+                                                                            </div> -->
                                                                             <div data-slide-duration="0" data-id="6"
-                                                                                data-slide-public-id="2"
+                                                                                data-slide-public-id="1"
                                                                                 data-title="पंचायत समिती ,आरमोरी"
                                                                                 class="n2-ss-slide n2-ow  n2-ss-slide-6">
                                                                                 <div role="note"
@@ -1845,7 +1845,7 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div data-slide-duration="0" data-id="8"
-                                                                                data-slide-public-id="3"
+                                                                                data-slide-public-id="2"
                                                                                 data-title="क्रीडा कार्यक्रम"
                                                                                 class="n2-ss-slide n2-ow  n2-ss-slide-8">
                                                                                 <div role="note"
@@ -1859,7 +1859,7 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div data-slide-duration="0" data-id="9"
-                                                                                data-slide-public-id="4"
+                                                                                data-slide-public-id="3"
                                                                                 data-title="निरोप समारंभ"
                                                                                 class="n2-ss-slide n2-ow  n2-ss-slide-9">
                                                                                 <div role="note"
@@ -1873,7 +1873,7 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div data-slide-duration="0" data-id="10"
-                                                                                data-slide-public-id="5"
+                                                                                data-slide-public-id="4"
                                                                                 data-title="विभागीय समिती आगमन"
                                                                                 class="n2-ss-slide n2-ow  n2-ss-slide-10">
                                                                                 <div role="note"
@@ -1888,7 +1888,7 @@
                                                                                 </div>
                                                                             </div>
                                                                             <div data-slide-duration="0" data-id="11"
-                                                                                data-slide-public-id="6"
+                                                                                data-slide-public-id="5"
                                                                                 data-title="विभागीय समिती"
                                                                                 class="n2-ss-slide n2-ow  n2-ss-slide-11">
                                                                                 <div role="note"
